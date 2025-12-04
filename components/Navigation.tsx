@@ -60,16 +60,13 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative px-6 py-2.5 rounded-xl font-medium text-sm transition-all duration-300 ${
+                className={`px-6 py-2.5 rounded-xl font-medium text-sm transition-all duration-300 ${
                   isActive(item.href)
                     ? "text-primary-700 bg-primary-50"
                     : "text-gray-700 hover:text-primary-700 hover:bg-gray-50"
                 }`}
               >
                 {item.label}
-                {isActive(item.href) && (
-                  <span className="absolute bottom-0 right-1/2 translate-x-1/2 w-1 h-1 bg-primary-600 rounded-full"></span>
-                )}
               </Link>
             ))}
           </div>

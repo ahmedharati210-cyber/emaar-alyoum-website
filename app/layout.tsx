@@ -95,9 +95,22 @@ export default function RootLayout({
                   <p className="text-gray-400 text-sm text-center md:text-right">
                     © {new Date().getFullYear()} شركة الطريق الصحيح المحدودة لاستيراد المواد الغذائية. جميع الحقوق محفوظة.
                   </p>
-                  <p className="text-gray-500 text-xs">
-                    تأسست عام 2018
-                  </p>
+                  <div className="flex flex-col items-center md:items-end gap-2">
+                    <p className="text-gray-500 text-xs">
+                      تأسست عام 2018
+                    </p>
+                    <p className="text-sm text-gray-400 text-center md:text-right">
+                      Created by{" "}
+                      <a
+                        href="https://www.facebook.com/profile.php?id=61580630652651"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-bold text-purple-400 hover:text-purple-300 transition-colors duration-200 cursor-pointer"
+                      >
+                        Harati
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
