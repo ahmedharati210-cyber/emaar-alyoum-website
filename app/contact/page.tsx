@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, MapPin, Send, CheckCircle2 } from "lucide-react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -36,42 +36,21 @@ export default function ContactPage() {
     });
   };
 
-  const branches = [
-    {
-      name: "فرع بن عاشور",
-      address: "طرابلس، بن عاشور، بالقرب من الإشارة الضوئية في اتجاه جامع الصقع",
-      phone: "0917040088",
-      hours: "10:30 صباحًا – 11:00 مساءً",
-    },
-    {
-      name: "فرع السياحية",
-      address: "طرابلس، السياحية، بالشارع المقابل لمعهد النفط (شارع السفارة القطرية)",
-      phone: "0927040088",
-      hours: "8:00 صباحًا – 9:00 مساءً",
-    },
-    {
-      name: "فرع مارينا حي الاندلس",
-      address: "طرابلس، حي الاندلس، في مرينا حي الاندلس",
-      phone: "0917040088",
-      hours: "9:00 صباحًا – 8:00 مساءً",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-secondary-600 text-white section-padding overflow-hidden">
+      <section className="relative bg-gradient-to-br from-accent-dark via-gray-800 to-accent-dark text-white section-padding overflow-hidden">
         <div 
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 100 0 L 0 0 0 100' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23grid)'/%3E%3C/svg%3E")`
           }}
         ></div>
         <div className="container-custom relative">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">اتصل بنا</h1>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              نحن هنا للإجابة على جميع استفساراتك ومساعدتك
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              نحن هنا للإجابة على جميع استفساراتك ومساعدتك في تحقيق مشروعك
             </p>
           </div>
         </div>
@@ -87,10 +66,10 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">الهاتف</h3>
               <a
-                href="tel:0917040088"
+                href="tel:0943461010"
                 className="text-primary-700 hover:text-primary-800 text-lg font-semibold transition-colors"
               >
-                0917040088
+                094-3461010
               </a>
             </div>
 
@@ -100,10 +79,10 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">البريد الإلكتروني</h3>
               <a
-                href="mailto:info@altaareeq.com"
+                href="mailto:info@emaaralyoum.ly"
                 className="text-secondary-700 hover:text-secondary-800 text-lg font-semibold break-all transition-colors"
               >
-                info@altaareeq.com
+                info@emaaralyoum.ly
               </a>
             </div>
 
@@ -112,65 +91,22 @@ export default function ContactPage() {
                 <MapPin className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">العنوان</h3>
-              <p className="text-gray-700 font-medium">طرابلس – ليبيا</p>
+              <p className="text-gray-600 font-medium">طرابلس – ليبيا</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Branches */}
-      <section className="section-padding bg-gradient-to-b from-gray-100 to-gray-50">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="section-title">فروعنا</h2>
-            <p className="section-subtitle">
-              نوفر لك خدمة ممتازة من خلال فروعنا المنتشرة في طرابلس
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {branches.map((branch, index) => (
-              <div key={index} className="card card-hover p-8 bg-white border-2 border-gray-200 shadow-xl">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">{branch.name}</h3>
-                <div className="space-y-5">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-5 h-5 text-primary-600" />
-                    </div>
-                    <p className="text-gray-700 leading-relaxed pt-1.5">{branch.address}</p>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-5 h-5 text-secondary-600" />
-                    </div>
-                    <a
-                      href={`tel:${branch.phone}`}
-                      className="text-primary-700 hover:text-primary-800 font-semibold transition-colors"
-                    >
-                      {branch.phone}
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-5 h-5 text-primary-600" />
-                    </div>
-                    <p className="text-gray-700 font-medium">{branch.hours}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Contact Form */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="section-title">أرسل لنا رسالة</h2>
-              <p className="section-subtitle">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">أرسل لنا رسالة</h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 سنكون سعداء للرد على استفساراتك في أقرب وقت ممكن
               </p>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary-500 to-primary-500 mx-auto rounded-full mt-4"></div>
             </div>
             <div className="card p-10 md:p-12 bg-gradient-to-br from-white to-gray-50 border-2 border-gray-200 shadow-xl">
               {isSubmitted && (

@@ -9,37 +9,37 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Tajawal', 'Inter', 'var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['Cairo', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
       },
       colors: {
         primary: {
-          50: "#e6f0f5",
-          100: "#b3d1e0",
-          200: "#80b2cb",
-          300: "#4d93b6",
-          400: "#1a74a1",
-          500: "#00558c", // Main dark blue from logo
-          600: "#004470",
-          700: "#003354",
-          800: "#002238",
-          900: "#00111c",
+          50: "#f5f3f0",
+          100: "#e8e0d6",
+          200: "#d1c0ad",
+          300: "#baa084",
+          400: "#a3805b",
+          500: "#8c6032", // Main brown from logo text
+          600: "#704d28",
+          700: "#543a1e",
+          800: "#382714",
+          900: "#1c140a",
         },
         secondary: {
-          50: "#f0f9f4",
-          100: "#d4ede0",
-          200: "#b8e1cc",
-          300: "#9cd5b8",
-          400: "#80c9a4",
-          500: "#64bd90", // Main green from logo
-          600: "#4a9d70",
-          700: "#357d50",
-          800: "#205d30",
-          900: "#0b3d10",
+          50: "#fef2f2",
+          100: "#fee2e2",
+          200: "#fecaca",
+          300: "#fca5a5",
+          400: "#f87171",
+          500: "#ef4444", // Red accent from logo
+          600: "#dc2626",
+          700: "#b91c1c",
+          800: "#991b1b",
+          900: "#7f1d1d",
         },
         accent: {
-          light: "#7dd87f", // Lighter green from gradient
-          DEFAULT: "#4a9d70", // Medium green
-          dark: "#2d6b47", // Darker green from gradient
+          light: "#d1d5db", // Light gray
+          DEFAULT: "#4b5563", // Medium gray from logo
+          dark: "#1f2937", // Dark gray/black from logo
         },
       },
     },

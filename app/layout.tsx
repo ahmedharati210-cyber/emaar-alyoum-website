@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-});
-
 export const metadata: Metadata = {
-  title: "الطريق الصحيح - استيراد أجود المواد الغذائية",
-  description: "شركة الطريق الصحيح - استيراد وتوزيع المواد الغذائية عالية الجودة في ليبيا. الوكالة الحصرية لـ Dolce Chocolate",
-  keywords: "الطريق الصحيح, استيراد, مواد غذائية, ليبيا, طرابلس, Dolce Chocolate",
+  title: "إعمار اليوم - الخدمات العقارية والاستثمار العقاري",
+  description: "شركة إعمار اليوم - متخصصة في الخدمات العقارية والاستثمار العقاري، المقاولات العامة، التصميم والتنفيذ",
+  keywords: "إعمار اليوم, عقارات, استثمار عقاري, مقاولات, بناء, تصميم, ليبيا, طرابلس",
 };
 
 export default function RootLayout({
@@ -22,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl" className={inter.variable}>
+    <html lang="ar" dir="rtl">
       <body className="antialiased font-sans m-0 p-0">
         <Navigation />
         <main className="m-0 p-0">{children}</main>
@@ -35,19 +28,19 @@ export default function RootLayout({
                     <div className="relative w-20 h-20 flex items-center justify-center flex-shrink-0">
                       <img
                         src="/logo.png"
-                        alt="شعار شركة الطريق الصحيح"
+                        alt="شعار شركة إعمار اليوم"
                         className="w-full h-full object-contain"
                         width={80}
                         height={80}
                       />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold">الطريق الصحيح</h3>
-                      <p className="text-xs text-gray-400">ALTAREQ ALSAHEH</p>
+                      <h3 className="text-lg font-bold">إعمار اليوم</h3>
+                      <p className="text-xs text-gray-400">EMAAR ALYOUM</p>
                     </div>
                   </div>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    شركة رائدة في استيراد وتوزيع المواد الغذائية عالية الجودة في ليبيا
+                    شركة متخصصة في الخدمات العقارية والاستثمار العقاري والمقاولات العامة
                   </p>
                 </div>
                 
@@ -76,13 +69,13 @@ export default function RootLayout({
                   <h4 className="text-lg font-semibold mb-6">معلومات التواصل</h4>
                   <ul className="space-y-3 text-sm text-gray-400">
                     <li>
-                      <a href="tel:0917040088" className="hover:text-white transition-colors">
-                        الهاتف: 0917040088
+                      <a href="tel:0943461010" className="hover:text-white transition-colors">
+                        الهاتف: 0943461010
                       </a>
                     </li>
                     <li>
-                      <a href="mailto:info@altaareeq.com" className="hover:text-white transition-colors">
-                        البريد: info@altaareeq.com
+                      <a href="mailto:info@emaaralyoum.ly" className="hover:text-white transition-colors">
+                        البريد: info@emaaralyoum.ly
                       </a>
                     </li>
                     <li>طرابلس – ليبيا</li>
@@ -93,12 +86,9 @@ export default function RootLayout({
               <div className="pt-8 border-t border-gray-800">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                   <p className="text-gray-400 text-sm text-center md:text-right">
-                    © {new Date().getFullYear()} شركة الطريق الصحيح المحدودة لاستيراد المواد الغذائية. جميع الحقوق محفوظة.
+                    © {new Date().getFullYear()} شركة إعمار اليوم للمقاولات العامة والاستثمار العقاري. جميع الحقوق محفوظة.
                   </p>
                   <div className="flex flex-col items-center md:items-end gap-2">
-                    <p className="text-gray-500 text-xs">
-                      تأسست عام 2018
-                    </p>
                     <p className="text-sm text-gray-400 text-center md:text-right">
                       Created by{" "}
                       <a

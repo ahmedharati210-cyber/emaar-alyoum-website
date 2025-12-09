@@ -37,3 +37,7 @@ next-env.d.ts
 # PDF files (keep them local, don't commit)
 *.pdf
 
+# Source images (keep local)
+*.jpeg
+*.jpg
+

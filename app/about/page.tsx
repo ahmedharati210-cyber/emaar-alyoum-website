@@ -1,103 +1,103 @@
-import { Building2, Target, Heart, TrendingUp, CheckCircle2, Award } from "lucide-react";
+import { Building2, Target, Award, CheckCircle2, Hammer, Home, Users, Clock, Shield, Lightbulb, TrendingUp } from "lucide-react";
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-secondary-600 text-white section-padding overflow-hidden">
+      <section className="relative bg-gradient-to-br from-accent-dark via-gray-800 to-accent-dark text-white section-padding overflow-hidden">
         <div 
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='grid' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 100 0 L 0 0 0 100' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.1'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23grid)'/%3E%3C/svg%3E")`
           }}
         ></div>
         <div className="container-custom relative">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">من نحن</h1>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              شركة رائدة في مجال استيراد وتوزيع المواد الغذائية عالية الجودة
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              شركة متخصصة في الخدمات العقارية والاستثمار العقاري
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* Main Content - About Company */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-10 md:p-12 shadow-lg border-2 border-primary-100">
-              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed text-center mb-6">
-                شركة <strong className="text-primary-700">الطريق الصحيح</strong> هي شركة ليبية رائدة تأسست عام{" "}
-                <strong>2018</strong>، تعمل في مجال <strong>استيراد المواد الغذائية</strong> وتوزيعها، مع تركيز
-                خاص على المنتجات ذات الجودة العالية والمعايير الموثوقة.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed text-center">
-                منذ بدايتنا، عملنا على بناء شبكة تعاون قوية مع أفضل الموردين لضمان تقديم منتجات ذات جودة
-                ممتازة للسوق المحلي.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Started */}
-      <section className="section-padding bg-gradient-to-b from-gray-100 to-gray-50">
-        <div className="container-custom">
           <div className="max-w-5xl mx-auto">
-            <div className="card p-10 md:p-12 bg-white border-2 border-primary-100 shadow-xl">
-              <div className="flex flex-col md:flex-row items-start gap-8">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center shadow-lg shadow-primary-500/30">
-                    <Building2 className="w-10 h-10 text-white" />
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">نبذة عن شركة إعمار اليوم</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary-500 to-primary-500 mx-auto rounded-full"></div>
+            </div>
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-10 md:p-14 shadow-xl border-2 border-gray-100">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-8 text-center">
+                شركة <strong className="text-primary-700">إعمار اليوم</strong> هي شركة متخصصة في الخدمات العقارية والاستثمار العقاري، تجمع بين الخبرة المهنية والرؤية المستقبلية لتقديم حلول عقارية متكاملة — سواء مشاريع سكنية، تجارية أو استثمارية.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-10 text-center">
+                تهدف الشركة إلى توفير بيئة سكنية واستثمارية مرموقة عبر:
+              </p>
+              <div className="space-y-6">
+                {[
+                  "تخطيط وتصميم وتنفيذ المشاريع السكنية والتجارية باستخدام فريق من المهندسين والمصممين المهرة.",
+                  "إدارة مشاريع متكاملة، من مرحلة الفكرة والتصميم، إلى البناء، التسليم، وخدمات ما بعد البيع إن لزم.",
+                  "خدمات شاملة للمستثمر/الزبون: من تقديم الاستشارات العقارية، حصر الكميات، أعمال التصميم والإشراف، إلى تسليم المشروع بجودة عالية.",
+                  "الشفافية والمصداقية في التعامل مع الزبائن والمستثمرين، مع الالتزام بالمواعيد ومعايير البناء والتشطيب.",
+                  "تحقيق حلم السكن أو الاستثمار؛ أي كانت رغبة الزبون — بيت سكني، شقة، وحدة تجارية أو مشروع استثماري — تعمل إعمار اليوم على تحويله إلى واقع ملموس.",
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-5 p-6 bg-white rounded-xl border-2 border-gray-200 hover:border-primary-300 hover:shadow-lg transition-all">
+                    <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center mt-0.5">
+                      <CheckCircle2 className="w-6 h-6 text-white" />
+                    </div>
+                    <p className="text-lg text-gray-700 leading-relaxed flex-1 pt-1">{item}</p>
                   </div>
-                </div>
-                <div className="flex-1">
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">كيف بدأت الشركة؟</h2>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    انطلقت الشركة من رؤية واضحة لتوفير بديل موثوق وعالي الجودة داخل السوق الليبية، مع التركيز
-                    على استيراد منتجات متميزة تلبي احتياجات العملاء على مستوى الجودة والتنوع والسعر المناسب.
-                  </p>
-                </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What Makes Us Special */}
-      <section className="section-padding bg-white">
+      {/* Vision & Values */}
+      <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="section-title">ما يميزنا</h2>
-            <p className="section-subtitle">
-              التزامنا بالجودة والتميز في كل ما نقدمه
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">رؤيتنا وقيمنا</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              التزامنا بالتميز في كل مشروع ننفذه
             </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-secondary-500 to-primary-500 mx-auto rounded-full mt-4"></div>
           </div>
-          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {[
               {
-                icon: Target,
-                title: "منتجات مختارة بعناية",
-                description: "ننتقي أجود المنتجات الغذائية العالمية فقط، مع ضمان أعلى معايير الجودة.",
+                icon: Award,
+                title: "جودة التنفيذ",
+                description: "نضمن أن تكون جميع المشاريع مطابقة للمواصفات الهندسية والمعمارية بأعلى معايير الجودة.",
                 color: "primary",
               },
               {
-                icon: Heart,
-                title: "وكالة Dolce Chocolate",
-                description: "نمتلك وكالة Dolce Chocolate حصريًا في ليبيا، مما يضمن جودة وتوفر المنتجات.",
+                icon: Lightbulb,
+                title: "تصميم مميز",
+                description: "تصميمات عصرية، عملية، وتراعي احتياجات الزبون — من المساحات، الطوابق، التوزيع الداخلي وحتى التفاصيل.",
                 color: "secondary",
               },
               {
-                icon: TrendingUp,
-                title: "معايير صارمة",
-                description: "نلتزم بمعايير صارمة في الجودة والتعبئة والتوزيع لضمان رضا العملاء.",
+                icon: Clock,
+                title: "الالتزام بالمواعيد",
+                description: "بدء العمل بعد الاتفاق والدفع المبدئي (عربون) — والانتهاء في الوقت المحدد.",
                 color: "primary",
+              },
+              {
+                icon: Shield,
+                title: "الشفافية مع الزبون",
+                description: "توفير عقد أو نموذج واضح يتضمن بيانات الزبون، تفاصيل المشروع، دفعات، وشروط — حتى يكون كل شيء موثّق.",
+                color: "secondary",
               },
               {
                 icon: Building2,
-                title: "توسع مستقبلي",
-                description: "نستعد لتوسيع أعمالنا مستقبلًا وفق أعلى المقاييس العالمية.",
-                color: "secondary",
+                title: "خدمة متكاملة",
+                description: "من الفكرة إلى التسليم — وما بعده إن احتاج الزبون خدمات صيانة أو متابعة.",
+                color: "primary",
               },
             ].map((item, index) => {
               const Icon = item.icon;
@@ -105,17 +105,17 @@ export default function AboutPage() {
                 primary: {
                   bg: "from-primary-50 to-primary-100/50",
                   border: "border-primary-200",
-                  icon: "from-primary-500 to-primary-600 shadow-primary-500/30",
+                  icon: "from-primary-500 to-primary-600",
                 },
                 secondary: {
                   bg: "from-secondary-50 to-secondary-100/50",
                   border: "border-secondary-200",
-                  icon: "from-secondary-500 to-secondary-600 shadow-secondary-500/30",
+                  icon: "from-secondary-500 to-secondary-600",
                 },
               };
               const colors = colorClasses[item.color as keyof typeof colorClasses];
               return (
-                <div key={index} className={`card card-hover p-8 group bg-gradient-to-br ${colors.bg} border-2 ${colors.border} shadow-lg`}>
+                <div key={index} className={`group bg-gradient-to-br ${colors.bg} border-2 ${colors.border} rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2`}>
                   <div className={`w-16 h-16 bg-gradient-to-br ${colors.icon} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                     <Icon className="w-8 h-8 text-white" />
                   </div>
@@ -128,98 +128,96 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Vision & Mission */}
-      <section className="section-padding bg-gradient-to-br from-gray-100 via-white to-gray-50">
+      {/* Why Choose Us */}
+      <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div className="card p-10 md:p-12 border-t-4 border-primary-600 bg-gradient-to-br from-white to-primary-50/30 shadow-xl">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center shadow-lg shadow-primary-500/30">
-                  <Target className="w-7 h-7 text-white" />
-                </div>
-                <h2 className="text-3xl font-bold text-gray-900">رؤيتنا</h2>
-              </div>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                أن نصبح من أبرز الشركات الليبية في قطاع استيراد وتوزيع المنتجات الغذائية الموثوقة.
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">لماذا تختار إعمار اليوم؟</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                نحن ملتزمون بتقديم أفضل تجربة لعملائنا
               </p>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary-500 to-primary-500 mx-auto rounded-full mt-4"></div>
             </div>
-
-            <div className="card p-10 md:p-12 border-t-4 border-secondary-600 bg-gradient-to-br from-white to-secondary-50/30 shadow-xl">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-xl flex items-center justify-center shadow-lg shadow-secondary-500/30">
-                  <Heart className="w-7 h-7 text-white" />
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                "فريق من المهندسين والمصممين المهرة ذوي الخبرة الواسعة",
+                "التزام صارم بمعايير الجودة والسلامة في البناء",
+                "شفافية كاملة في التعامل والتوثيق",
+                "خدمة متكاملة من التصميم إلى التسليم",
+                "الالتزام بالمواعيد المتفق عليها",
+                "أسعار تنافسية وجودة عالية",
+              ].map((item, index) => (
+                <div key={index} className="flex items-start gap-4 p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl border-2 border-gray-200 hover:border-primary-300 hover:shadow-lg transition-all">
+                  <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mt-0.5">
+                    <CheckCircle2 className="w-5 h-5 text-white" />
+                  </div>
+                  <p className="text-lg text-gray-700 leading-relaxed flex-1">{item}</p>
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900">رسالتنا</h2>
-              </div>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                تقديم منتجات ذات جودة عالية تلبي احتياجات السوق الليبي وتبني علاقة ثقة دائمة مع المستهلك.
-              </p>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Dolce Chocolate Section */}
-      <section className="section-padding bg-gradient-to-b from-white to-gray-50">
+      {/* Services Overview */}
+      <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
         <div className="container-custom">
-          <div className="max-w-5xl mx-auto">
-            <div className="card p-10 md:p-16 bg-gradient-to-br from-primary-600 via-primary-700 to-secondary-600 text-white border-0 shadow-2xl">
-              <div className="text-center mb-12">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl mb-6">
-                  <Award className="w-10 h-10 text-white" />
-                </div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-4">Dolce Chocolate</h2>
-                <p className="text-xl text-white/90">جودة تتجاوز الطعم</p>
-              </div>
-
-              <div className="mb-8 text-center">
-                <p className="text-lg text-white/95 leading-relaxed max-w-3xl mx-auto">
-                  تأسست علامتنا <strong>Dolce Chocolate</strong> عام <strong>2019</strong> لتكون واحدة من العلامات
-                  التي تمثل الفخامة في عالم الشوكولاتة.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-8 border border-white/30 shadow-lg">
-                  <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-secondary-200" />
-                    ما الذي يميز Dolce؟
-                  </h3>
-                  <ul className="space-y-4 text-white">
-                    {[
-                      "خامات ممتازة",
-                      "نكهات فاخرة",
-                      "تغليف عصري",
-                      "جودة تصنيع عالية",
-                      "التزام بمعايير نظافة وسلامة الأغذية",
-                    ].map((item, index) => (
-                      <li key={index} className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-secondary-200 rounded-full flex-shrink-0"></div>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-8 border border-white/30 shadow-lg">
-                  <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-secondary-200" />
-                    منتجات Dolce المتوفرة
-                  </h3>
-                  <ul className="space-y-4 text-white">
-                    {[
-                      "شوكولاتة سادة",
-                      "أصابع شوكولاتة",
-                      "شوكولاتة بنكهات متعددة",
-                      "منتجات قيد الإضافة مستقبلاً",
-                    ].map((item, index) => (
-                      <li key={index} className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-secondary-200 rounded-full flex-shrink-0"></div>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">خدماتنا</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                نقدم حلولاً شاملة لجميع احتياجاتك العقارية
+              </p>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary-500 to-primary-500 mx-auto rounded-full mt-4"></div>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  icon: Home,
+                  title: "المشاريع السكنية",
+                  description: "تصميم وتنفيذ المشاريع السكنية بجودة عالية ومواصفات ممتازة، من الفيلات إلى الشقق السكنية",
+                },
+                {
+                  icon: Building2,
+                  title: "المشاريع التجارية",
+                  description: "إنشاء وتطوير المشاريع التجارية والاستثمارية، من المحلات التجارية إلى المجمعات",
+                },
+                {
+                  icon: Hammer,
+                  title: "المقاولات العامة",
+                  description: "تنفيذ جميع أعمال البناء والتشطيب والديكور بأعلى معايير الجودة",
+                },
+                {
+                  icon: Target,
+                  title: "الاستشارات العقارية",
+                  description: "تقديم استشارات متخصصة في مجال العقارات والاستثمار العقاري",
+                },
+                {
+                  icon: TrendingUp,
+                  title: "حصر الكميات",
+                  description: "حصر دقيق للكميات والتكاليف لضمان الشفافية والدقة في التخطيط",
+                },
+                {
+                  icon: Users,
+                  title: "الإشراف والتنفيذ",
+                  description: "إشراف مهني على جميع مراحل المشروع من البداية حتى التسليم",
+                },
+              ].map((service, index) => {
+                const Icon = service.icon;
+                return (
+                  <div key={index} className="relative group">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-secondary-500/10 rounded-3xl blur-xl group-hover:blur-2xl transition-all"></div>
+                    <div className="relative bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                      <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
+                      <p className="text-gray-700 leading-relaxed">{service.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
